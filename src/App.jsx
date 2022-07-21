@@ -7,6 +7,7 @@ import Suppliers from './pages/Suppliers'
 import Contact from './pages/Contact';
 
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                 <Route path="/suppliers" element={<Suppliers />}></Route>
                 <Route path="/contact-us" element={<Contact />}></Route>
             </Routes>
+            <Footer />
         </BrowserRouter>
     );
 }

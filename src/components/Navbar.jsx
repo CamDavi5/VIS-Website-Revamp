@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-            <nav className="navbar navbar-expand-lg bg-secondary shadow">
-                <span className="navbar-brand text-white">Vulcan Industrial Supply</span>
+            <nav id="Nav" className="navbar navbar-expand-lg shadow mb-4">
+                <img className="mr-3" src="./assets/TempLogo.png" width="120" alt="" ></img>
                 <div className="navbar-nav justify-content-center">
                     <NavLink to="/" className="nav-item nav-link text-white">Home</NavLink>
                     <NavLink to="/products" className="nav-item nav-link text-white">Our Products</NavLink>
