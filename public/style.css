@@ -14,3 +14,15 @@
 #Nav {
     background-color: #aa3738;
 }
+
+#outsideStore {
+    border: 5px solid #4b4d47;
+    border-radius: .5rem;
+}
+
+#welcomeMsg {
+    color: #aa1f20;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #4b4d47;
+}
