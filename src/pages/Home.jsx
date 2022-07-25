@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
     return (
         <>
-            <div className="d-flex flex-column align-items-center ">
+            <div className="d-flex flex-column align-items-center mt-4">
                 <img id="outsideStore" src="./assets/GoogleEarthPic.png" width="700px" alt="" />
                 <div className="mt-2">
                     <h1 id="welcomeMsg" className="text-center">Welcome to Vulcan Industrial Supply</h1>

@@ -5,7 +5,7 @@ import ContactCard from "../components/ContactCard"
 const Contact = () => {
     return (
         <>
-            <h3 className="d-flex justify-content-center">President</h3>
+            <h3 className="d-flex justify-content-center mt-4">President</h3>
             <div className="d-flex justify-content-center mb-5">
                 <ContactCard image={""} name={"John Rutledge"} email={""} cell={""}/>
             </div>
@@ -21,7 +21,7 @@ const Contact = () => {
             </div>
             <h3 className="d-flex justify-content-center">Office AP/AR</h3>
             <div className="d-flex justify-content-center mb-4">
-            <ContactCard image={""} name={"Tina Layne"} email={"sales@vulcanindustrial.com"} cell={"205-849-7770"}/>
+                <ContactCard image={""} name={"Tina Layne"} email={"sales@vulcanindustrial.com"} cell={"205-849-7770"}/>
             </div>
         </>
 

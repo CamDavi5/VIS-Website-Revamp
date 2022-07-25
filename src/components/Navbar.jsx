@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-            <nav id="Nav" className="navbar navbar-expand-lg shadow mb-4">
+            <nav id="Nav" className="navbar navbar-expand-lg shadow">
                 <img className="mr-3" src="./assets/TempLogo.png" width="120" alt="" ></img>
                 <div className="navbar-nav justify-content-center">
                     <NavLink to="/" className="nav-item nav-link text-white">Home</NavLink>
