@@ -10,7 +10,7 @@ const Contact = () => {
                 <ContactCard image={""} name={"John Rutledge"} email={""} cell={""}/>
             </div>
             <h3 className="d-flex justify-content-center">Sales</h3>
-            <div className="d-flex justify-content-center mb-5">
+            <div className="d-flex flex-wrap justify-content-center mb-5">
                 <div className="mr-5">
                     <ContactCard className="mr-3" image={""} name={"Tony Metcalf"} email={""} cell={"205-369-7158"}/>    
                 </div>
