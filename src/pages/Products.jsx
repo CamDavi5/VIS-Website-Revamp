@@ -7,11 +7,13 @@ const Products = () => {
     let productsArr = ["Fasteners", "Cutting Tools", "Electrical Supplies",
         "Abrasives", "Pipe Fittings", "Brass Fittings", "Chemicals", "Safety Supplies"];
     
+    let lorem = "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...";
+
     return (
         <>
             <div className="d-flex flex-wrap justify-content-center">
                 {productsArr.map((product) => ( 
-                    <ProductCard img={""} name={product} description={"Honestly idk"}></ProductCard>
+                    <ProductCard img={""} name={product} description={lorem}></ProductCard>
                 ))}
             </div>
         </> 

@@ -26,3 +26,17 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #4b4d47;
 }
+
+.carouselMsg {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.homeMotto {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
