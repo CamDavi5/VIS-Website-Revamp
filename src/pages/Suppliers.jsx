@@ -40,6 +40,17 @@ const Suppliers = () => {
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        let top = document.getElementById("topBtn");
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            top.style.display = "block";
+        } else {
+            top.style.display = "none";
+        }
+    }
+
     return (
         <>
             <nav id="productSpyScroll"className="navbar navbar-light bg-light d-flex justify-content-center mb-3">
@@ -50,25 +61,25 @@ const Suppliers = () => {
                 </ul>
             </nav>
             <div data-spy="scroll" data-target="#productSpyScroll" data-offset="0">
-                {alphabetArr.map((char) => (
-                    <>
+                {alphabetArr.map((char, indexA) => (
+                    <div>
                         {supplierArr.some((supplier) => (
                                 supplier[0] === char      
                         )) ? <div className="d-flex ml-2">
-                                <h5 id={char}>{char}</h5>
-                                <button className="ml-3" onClick={buttonTop}>To Top</button>
+                                <h5 key={indexA} id={char}>{char}</h5>
                             </div> : null}  
                         
                         <ul>
-                            {supplierArr.map((supplier) => (
+                            {supplierArr.map((supplier, indexS) => (
                                 supplier[0] == char
-                                ? <ScrollSpySupplier item={supplier}></ScrollSpySupplier> : null
+                                ? <ScrollSpySupplier key={indexS} item={supplier}></ScrollSpySupplier> : null
                             ))}
                         </ul>
-                    </>
+                    </div>
                 ))}
                 
             </div>
+            <button onClick={buttonTop} id="topBtn" title="Go to top">Top</button>
         </>
 
     );
