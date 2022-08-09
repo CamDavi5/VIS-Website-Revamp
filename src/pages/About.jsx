@@ -7,12 +7,13 @@ const About = () => {
 
     return (
         <>
-            <img src="./assets/AboutBannerTest.gif" alt="noppers" />
-            <h3>{aboutOne}</h3>
-            <h3>{aboutTwo}</h3>
-            <img style={{width: 400+"px"}}src="./assets/GroupPlaceholder.jpeg" alt="oopsie" />
-            <h3>{aboutThree}</h3>
-            
+            <div className="d-flex flex-column align-items-center">
+                <img src="./assets/AboutBannerTest.gif" alt="noppers" />
+                <h4>{aboutOne}</h4>
+                <h4>{aboutTwo}</h4>
+                <img style={{width: 400+"px"}}src="./assets/GroupPlaceholder.jpeg" alt="oopsie" />
+                <h4>{aboutThree}</h4>
+            </div>
         </> 
     )
 }
