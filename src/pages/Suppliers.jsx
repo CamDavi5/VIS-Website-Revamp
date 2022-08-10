@@ -51,6 +51,11 @@ const Suppliers = () => {
         }
     }
 
+    function disableNav (invalidHref) {
+        let item = document.querySelector("#"+invalidHref);
+        item.style.color = "grey";
+    }
+
     return (
         <>
             <nav id="productSpyScroll"className="navbar navbar-light bg-light d-flex justify-content-center mb-3">
@@ -67,7 +72,7 @@ const Suppliers = () => {
                                 supplier[0] === char      
                         )) ? <div className="d-flex ml-2">
                                 <h5 key={indexA} id={char}>{char}</h5>
-                            </div> : null}  
+                            </div> : null /*disableNav should go here*/}
                         
                         <ul>
                             {supplierArr.map((supplier, indexS) => (

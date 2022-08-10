@@ -1,6 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
+    
+    function buttonTop () {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    
     return (
         <>
             <div className="d-flex flex-column align-items-center mt-4">
@@ -24,21 +31,33 @@ const Home = () => {
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img className="d-block w-100" src="./assets/TempLogo.png" alt="First slide"/>
+                            <NavLink to="/products">
+                                <a onClick={buttonTop} href="">
+                                    <img className="d-block w-100" src="./assets/TempLogo.png" alt="First slide"/>
+                                </a>
+                            </NavLink>
                             <div className="carousel-caption">
                                 <h5 className="carouselMsg">View Our Products</h5>
                                 <h6 className="carouselMsg">We have a variety of tools and parts to meet your needs!</h6>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src="./assets/TempLogo.png" alt="Second slide"/>
+                            <NavLink to="/suppliers">
+                                <a onClick={buttonTop} href="">
+                                    <img className="d-block w-100" src="./assets/TempLogo.png" alt="Second slide"/>
+                                </a>
+                            </NavLink>
                             <div className="carousel-caption">
                                 <h5 className="carouselMsg">Check Our Suppliers</h5>
                                 <h6 className="carouselMsg">Learn about suppliers we trust</h6>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src="./assets/TempLogo.png" alt="Third slide"/>
+                            <NavLink to="/contact-us">
+                                <a onClick={buttonTop} href="">
+                                    <img className="d-block w-100" src="./assets/TempLogo.png" alt="Third slide"/>
+                                </a>
+                            </NavLink>
                             <div className="carousel-caption">
                                 <h5 className="carouselMsg">Contact Our Team</h5>
                                 <h6 className="carouselMsg">Easy service via cell and email</h6>
