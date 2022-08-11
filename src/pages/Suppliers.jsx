@@ -43,12 +43,16 @@ const Suppliers = () => {
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
-        let top = document.getElementById("topBtn");
-        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-            top.style.display = "block";
-        } else {
-            top.style.display = "none";
+        let currentURL = window.location.href;
+        if (currentURL.includes("/suppliers")) {
+            let top = document.getElementById("topBtn");
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                top.style.display = "block";
+            } else {
+                top.style.display = "none";
+            }
         }
+        
     }
 
     function disableNav (invalidHref) {

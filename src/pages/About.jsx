@@ -8,11 +8,20 @@ const About = () => {
     return (
         <>
             <div className="d-flex flex-column align-items-center">
-                <img src="./assets/AboutBannerTest.gif" alt="noppers" />
-                <h4>{aboutOne}</h4>
-                <h4>{aboutTwo}</h4>
-                <img style={{width: 400+"px"}}src="./assets/GroupPlaceholder.jpeg" alt="oopsie" />
-                <h4>{aboutThree}</h4>
+                <img className="mt-4" style={{width: 400+"px"}}src="./assets/GroupPlaceholder.jpeg" alt="oopsie" />
+                <h4 className="mb-4">{aboutThree}</h4>
+            </div>
+            <div className="mb-4 d-flex justify-content-center">
+                <div className="pr-2" style={{width: 750+"px"}}>
+                    <h4>{aboutOne}</h4>
+                </div>
+                <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red"}}></div>
+            </div>
+            <div className="d-flex justify-content-center">
+                <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red"}}></div>
+                <div className="pl-2" style={{width: 750+"px"}}>
+                    <h4>{aboutTwo}</h4>
+                </div>
             </div>
         </> 
     )
