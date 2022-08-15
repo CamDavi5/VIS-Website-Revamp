@@ -42,7 +42,7 @@ const Suppliers = () => {
 
     window.onscroll = function() {scrollFunction()};
 
-    function scrollFunction() {
+    function scrollFunction () {
         let currentURL = window.location.href;
         if (currentURL.includes("/suppliers")) {
             let top = document.getElementById("topBtn");
@@ -65,23 +65,23 @@ const Suppliers = () => {
             <nav id="productSpyScroll"className="navbar navbar-light bg-light d-flex justify-content-center mb-3">
                 <ul className="nav nav-pills">
                     {alphabetArr.map((char) => (
-                        <ScrollSpyNav letter={char}></ScrollSpyNav>
+                        <ScrollSpyNav key={char} letter={char}></ScrollSpyNav>
                     ))}
                 </ul>
             </nav>
             <div data-spy="scroll" data-target="#productSpyScroll" data-offset="0">
                 {alphabetArr.map((char, indexA) => (
-                    <div>
+                    <div key={"ul"+indexA.toString()}>
                         {supplierArr.some((supplier) => (
                                 supplier[0] === char      
                         )) ? <div className="d-flex ml-2">
-                                <h5 key={indexA} id={char}>{char}</h5>
+                                <h5 id={char}>{char}</h5>
                             </div> : null /*disableNav should go here*/}
                         
                         <ul>
                             {supplierArr.map((supplier, indexS) => (
                                 supplier[0] === char
-                                ? <ScrollSpySupplier key={indexS} item={supplier}></ScrollSpySupplier> : null
+                                ? <ScrollSpySupplier key={"li"+indexS.toString()} item={supplier}></ScrollSpySupplier> : null
                             ))}
                         </ul>
                     </div>

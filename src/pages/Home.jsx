@@ -31,10 +31,8 @@ const Home = () => {
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <NavLink to="/products">
-                                <a onClick={buttonTop} href="">
+                            <NavLink onClick={buttonTop} to="/products">
                                     <img className="d-block w-100" src="./assets/TempLogo.png" alt="First slide"/>
-                                </a>
                             </NavLink>
                             <div className="carousel-caption">
                                 <h5 className="carouselMsg">View Our Products</h5>
@@ -42,10 +40,9 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <NavLink to="/suppliers">
-                                <a onClick={buttonTop} href="">
+                            <NavLink onClick={buttonTop} to="/suppliers">
+        
                                     <img className="d-block w-100" src="./assets/TempLogo.png" alt="Second slide"/>
-                                </a>
                             </NavLink>
                             <div className="carousel-caption">
                                 <h5 className="carouselMsg">Check Our Suppliers</h5>
@@ -53,10 +50,8 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <NavLink to="/contact-us">
-                                <a onClick={buttonTop} href="">
+                            <NavLink onClick={buttonTop} to="/contact-us">
                                     <img className="d-block w-100" src="./assets/TempLogo.png" alt="Third slide"/>
-                                </a>
                             </NavLink>
                             <div className="carousel-caption">
                                 <h5 className="carouselMsg">Contact Our Team</h5>
