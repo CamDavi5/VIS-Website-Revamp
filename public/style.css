@@ -70,3 +70,25 @@
     text-decoration: underline;
 }
 
+.aboutContent {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.grayOpacity {
+    background-color: rgb(75, 77, 71, 0.5);
+}
+
+.leftRoundCorners {
+    border-radius: 20px 0 0 20px;
+}
+
+.rightRoundCorners {
+    border-radius: 0 20px 20px 0;
+}
+
+.aboutImageSizing {
+    padding: 2em;
+    background-color: rgb(75, 77, 71, 0.85);
+}

@@ -11,16 +11,24 @@ const About = () => {
                 <img className="mt-4" style={{width: 400+"px"}}src="./assets/GroupPlaceholder.jpeg" alt="oopsie" />
                 <h4 className="mb-4">{aboutThree}</h4>
             </div>
-            <div className="mb-4 d-flex justify-content-center">
-                <div className="pr-2" style={{width: 750+"px"}}>
-                    <h4>{aboutOne}</h4>
+            <div className="aboutContent">
+                <div className="d-flex justify-content-center align-items-center leftRoundCorners" style={{backgroundColor: "rgb(75, 77, 71, 0.85)"}}>
+                    <div className="pl-4" style={{width: 750+"px"}}>
+                        <h4 style={{color: "white"}}>{aboutOne}</h4>
+                    </div>
                 </div>
-                <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red"}}></div>
+                <div className="rightRoundCorners aboutImageSizing">
+                    <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red"}}></div>
+                </div>
             </div>
-            <div className="d-flex justify-content-center">
-                <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red"}}></div>
-                <div className="pl-2" style={{width: 750+"px"}}>
-                    <h4>{aboutTwo}</h4>
+            <div className="aboutContent">
+                <div className="leftRoundCorners aboutImageSizing">
+                    <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red"}}></div>
+                </div>
+                <div className="d-flex justify-content-center align-items-center rightRoundCorners" style={{backgroundColor: "rgb(75, 77, 71, 0.85)"}}>
+                    <div className="pr-4" style={{width: 750+"px"}}>
+                        <h4 style={{color: "white"}}>{aboutTwo}</h4>
+                    </div>
                 </div>
             </div>
         </> 
