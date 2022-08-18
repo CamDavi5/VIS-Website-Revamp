@@ -7,8 +7,6 @@
     padding: 20px;
     left: 0;
     bottom: 0;
-    height: 100px;
-    width: 100%;
 }
 
 #Nav {
@@ -22,7 +20,7 @@
 
 #welcomeMsg {
     color: #aa1f20;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: serif, 'Times New Roman', Times;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #4b4d47;
 }
@@ -55,9 +53,14 @@
     -webkit-text-stroke-color: black;
 }
 
+.homeDetails {
+    font-family: serif, 'Times New Roman', Times;
+    font-weight: bold;
+}
+
 .homeMotto {
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: serif, 'Times New Roman', Times;
 }
 
 .suppliersList {
@@ -74,10 +77,6 @@
     padding: 1em;
     display: flex;
     justify-content: center;
-}
-
-.grayOpacity {
-    background-color: rgb(75, 77, 71, 0.5);
 }
 
 .leftRoundCorners {

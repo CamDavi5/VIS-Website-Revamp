@@ -15,9 +15,9 @@ const Home = () => {
                 <div className="mt-2">
                     <h1 id="welcomeMsg" className="text-center">Welcome to Vulcan Industrial Supply</h1>
                     <hr></hr>
-                    <h5 className="text-center">3110 Pinson Valley Pkwy, Birmingham, AL 35217 | 205-849-7770</h5>
-                    <h5 className="text-center">Hours: 8am-4:30pm, Monday-Thursday</h5>
-                    <h5 className="text-center mr-5 ml-1">8am-4:00pm, Friday</h5>
+                    <h5 className="text-center homeDetails">3110 Pinson Valley Pkwy, Birmingham, AL 35217 | 205-849-7770</h5>
+                    <h5 className="text-center homeDetails">Hours: 8am-4:30pm, Monday-Thursday</h5>
+                    <h5 className="text-center homeDetails mr-5 ml-2">8am-4:00pm, Friday</h5>
                 </div>
                 <div className="d-flex flex-column align-items-center mt-3">
                     <h3 className="homeMotto">"Our goal is to provide our customers with a single vendor for a variety of commodities.</h3>

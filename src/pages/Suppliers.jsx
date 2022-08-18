@@ -62,19 +62,22 @@ const Suppliers = () => {
 
     return (
         <>
-            <nav id="productSpyScroll"className="navbar navbar-light bg-light d-flex justify-content-center mb-3">
+            <nav id="productSpyScroll"className="navbar navbar-light bg-light d-flex justify-content-center mb-1">
                 <ul className="nav nav-pills">
                     {alphabetArr.map((char) => (
                         <ScrollSpyNav key={char} letter={char}></ScrollSpyNav>
                     ))}
                 </ul>
             </nav>
+            <div className="d-flex justify-content-center mb-3">
+                <h5>Click any of the suppliers below to learn more!</h5>
+            </div>
             <div data-spy="scroll" data-target="#productSpyScroll" data-offset="0">
                 {alphabetArr.map((char, indexA) => (
                     <div key={"ul"+indexA.toString()}>
                         {supplierArr.some((supplier) => (
                                 supplier[0] === char      
-                        )) ? <div className="d-flex ml-2">
+                        )) ? <div className="d-flex ml-4">
                                 <h5 id={char}>{char}</h5>
                             </div> : null /*disableNav should go here*/}
                         
