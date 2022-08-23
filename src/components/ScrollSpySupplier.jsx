@@ -11,7 +11,7 @@ const ScrollSpySupplier = ({name, image, description}) => {
             <li className="suppliersList" onClick={() => setButtonPopup(true)}>{name}</li>
             <SupplierPopup trigger={buttonPopup} setTrigger={setButtonPopup}>
                 <h3 className="mt-4">{name}</h3>
-                <img src={image} alt="image should be here" />
+                    <img src={image} alt="image should be here" />
                 <p>{description}</p>
             </SupplierPopup>
         </div>
