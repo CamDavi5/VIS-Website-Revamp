@@ -8,7 +8,7 @@ const About = () => {
     return (
         <>
             <div className="d-flex flex-column align-items-center">
-                <img className="mt-4" style={{width: 400+"px"}}src="./assets/GroupPlaceholder.jpeg" alt="oopsie" />
+            <div className="mt-4"style={{width: 800+"px", height: 200+"px", backgroundColor: "red", textAlign: "center"}}>IMAGE</div>
                 <h4 className="mb-4">{aboutThree}</h4>
             </div>
             <div className="aboutContent">
@@ -18,12 +18,12 @@ const About = () => {
                     </div>
                 </div>
                 <div className="rightRoundCorners aboutImageSizing">
-                    <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red"}}></div>
+                    <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red", textAlign: "center"}}>IMAGE</div>
                 </div>
             </div>
             <div className="aboutContent">
                 <div className="leftRoundCorners aboutImageSizing">
-                    <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red"}}></div>
+                    <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red", textAlign: "center"}}>IMAGE</div>
                 </div>
                 <div className="d-flex justify-content-center align-items-center rightRoundCorners" style={{backgroundColor: "rgb(75, 77, 71, 0.85)"}}>
                     <div className="pr-4" style={{width: 750+"px"}}>

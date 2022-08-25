@@ -35,6 +35,8 @@ const Suppliers = () => {
         "WROUGHT WASHER",
         "XL SCREW CORP"];
     
+    let brightonDesc = "Stocking over 60,000SKUs of industrial and commercial fasteners"
+
     function buttonTop () {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -84,7 +86,7 @@ const Suppliers = () => {
                         <ul>
                             {supplierArr.map((supplier, indexS) => (
                                 supplier[0] === char
-                                ? <ScrollSpySupplier key={"li"+indexS.toString()} name={supplier} image={"./assets/TempSupplierLogo.jpg"} description={"Yeah boiiiiiiiiii"}></ScrollSpySupplier> : null
+                                ? <ScrollSpySupplier key={"li"+indexS.toString()} name={supplier} image={"./assets/TempSupplierLogo.jpg"} description={"Supplier description goes here"}></ScrollSpySupplier> : null
                             ))}
                         </ul>
                     </div>
