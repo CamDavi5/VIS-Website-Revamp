@@ -8,26 +8,20 @@ const About = () => {
     return (
         <>
             <div className="d-flex flex-column align-items-center">
-            <div className="mt-4"style={{width: 800+"px", height: 200+"px", backgroundColor: "red", textAlign: "center"}}>IMAGE</div>
+                <div className="mt-4"style={{width: 800+"px", height: 200+"px", backgroundColor: "red", maxWidth: 100+"%", textAlign: "center"}}>IMAGE</div>
                 <h4 className="mb-4">{aboutThree}</h4>
             </div>
-            <div className="aboutContent">
-                <div className="d-flex justify-content-center align-items-center leftRoundCorners" style={{backgroundColor: "rgb(75, 77, 71, 0.85)"}}>
-                    <div className="pl-4" style={{width: 750+"px"}}>
-                        <h4 style={{color: "white"}}>{aboutOne}</h4>
-                    </div>
+                <div className="aboutContent" style={{backgroundColor: "rgb(75, 77, 71, 0.85)"}}>
+                        <h4 style={{color: "white", maxWidth: 720+"px"}}>{aboutOne}</h4>
+                        <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red", maxWidth: 100+"%", textAlign: "center"}}>IMAGE</div>
                 </div>
-                <div className="rightRoundCorners aboutImageSizing">
-                    <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red", textAlign: "center"}}>IMAGE</div>
-                </div>
-            </div>
             <div className="aboutContent">
                 <div className="leftRoundCorners aboutImageSizing">
-                    <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red", textAlign: "center"}}>IMAGE</div>
+                    <div style={{width: 400+"px", height: 200+"px", backgroundColor: "red", maxWidth: 100+"%", textAlign: "center"}}>IMAGE</div>
                 </div>
-                <div className="d-flex justify-content-center align-items-center rightRoundCorners" style={{backgroundColor: "rgb(75, 77, 71, 0.85)"}}>
-                    <div className="pr-4" style={{width: 750+"px"}}>
-                        <h4 style={{color: "white"}}>{aboutTwo}</h4>
+                <div className="rightRoundCorners" style={{backgroundColor: "rgb(75, 77, 71, 0.85)"}}>
+                    <div className="pr-4">
+                        <h4 style={{color: "white", maxWidth: 750+"px"}}>{aboutTwo}</h4>
                     </div>
                 </div>
             </div>

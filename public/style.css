@@ -76,7 +76,12 @@
 .aboutContent {
     padding: 1em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
 }
 
 .leftRoundCorners {
@@ -106,7 +111,7 @@
 }
 
 .popupInner {
-    padding: 32px;
+    position: relative;
     background-color: white;
     border-radius: 20px;
 }

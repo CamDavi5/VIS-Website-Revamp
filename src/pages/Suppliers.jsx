@@ -36,6 +36,7 @@ const Suppliers = () => {
         "XL SCREW CORP"];
     
     let brightonDesc = "Stocking over 60,000SKUs of industrial and commercial fasteners"
+    let lorem = "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... ";
 
     function buttonTop () {
         document.body.scrollTop = 0; // For Safari
@@ -65,7 +66,7 @@ const Suppliers = () => {
     return (
         <>
             <nav id="productSpyScroll"className="navbar navbar-light bg-light d-flex justify-content-center mb-1">
-                <ul className="nav nav-pills">
+                <ul className="nav">
                     {alphabetArr.map((char) => (
                         <ScrollSpyNav key={char} letter={char}></ScrollSpyNav>
                     ))}
@@ -86,7 +87,7 @@ const Suppliers = () => {
                         <ul>
                             {supplierArr.map((supplier, indexS) => (
                                 supplier[0] === char
-                                ? <ScrollSpySupplier key={"li"+indexS.toString()} name={supplier} image={"./assets/TempSupplierLogo.jpg"} description={"Supplier description goes here"}></ScrollSpySupplier> : null
+                                ? <ScrollSpySupplier key={"li"+indexS.toString()} name={supplier} image={"./assets/TempSupplierLogo.jpg"} description={lorem+lorem+lorem}></ScrollSpySupplier> : null
                             ))}
                         </ul>
                     </div>

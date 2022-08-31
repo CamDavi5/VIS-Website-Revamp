@@ -10,12 +10,12 @@ const Contact = () => {
                 <ContactCard image={"./assets/ContactImgPlaceholder.jpg"} name={"John Rutledge"} email={""} cell={""}/>
             </div>
             <h3 className="d-flex justify-content-center">Sales</h3>
-            <div className="d-flex flex-wrap justify-content-center mb-5">
-                <div className="mr-5">
-                    <ContactCard className="mr-3" image={"./assets/ContactImgPlaceholder.jpg"} name={"Tony Metcalf"} email={""} cell={"205-369-7158"}/>    
+            <div className="d-flex flex-wrap justify-content-around mb-5">
+                <div>
+                    <ContactCard image={"./assets/ContactImgPlaceholder.jpg"} name={"Tony Metcalf"} email={""} cell={"205-369-7158"}/>    
                 </div>
                 <ContactCard image={"./assets/ContactImgPlaceholder.jpg"} name={"Corey Calvert"} email={""} cell={"205-296-7381"}/>
-                <div className="ml-5">
+                <div>
                     <ContactCard image={"./assets/ContactImgPlaceholder.jpg"} name={"Nick Parker"} email={""} cell={"205-542-0240"}/>
                 </div>
             </div>

@@ -19,7 +19,7 @@ const Home = () => {
                     <h5 className="text-center homeDetails">Hours: 8am-4:30pm, Monday-Thursday</h5>
                     <h5 className="text-center homeDetails mr-5 ml-2">8am-4:00pm, Friday</h5>
                 </div>
-                <div className="d-flex flex-column align-items-center mt-3">
+                <div className="mt-3" style={{maxWidth: 1024+"px"}}>
                     <h3 className="homeMotto" style={{textAlign: "center"}}>"Our goal is to provide our customers with a single vendor for a variety of commodities. We strive to meet all of your industrial maintenance needs."</h3>
                 </div>
                 <div id="carouselExampleIndicators" className="carousel slide mt-4" data-ride="carousel" data-interval="10000"> 
