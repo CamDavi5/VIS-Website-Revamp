@@ -87,7 +87,7 @@ const Suppliers = () => {
                         <ul>
                             {supplierArr.map((supplier, indexS) => (
                                 supplier[0] === char
-                                ? <ScrollSpySupplier key={"li"+indexS.toString()} name={supplier} image={"./assets/TempSupplierLogo.jpg"} description={lorem+lorem+lorem}></ScrollSpySupplier> : null
+                                ? <ScrollSpySupplier key={"li"+indexS.toString()} name={supplier} logo={"./assets/TempSupplierLogo.jpg"} description={lorem+lorem+lorem}></ScrollSpySupplier> : null
                             ))}
                         </ul>
                     </div>
