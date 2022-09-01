@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <>
             <div className="d-flex flex-column align-items-center mt-4">
-                <img id="outsideStore" src="./assets/GoogleEarthPic.png" alt="" style={{width: 700+"px", maxWidth: 100+"%"}}/>
+                <img id="outsideStore" src="./assets/GoogleEarthPic.PNG" alt="" style={{width: 700+"px", maxWidth: 100+"%"}}/>
                 <div className="mt-2">
                     <h1 id="welcomeMsg" className="text-center">Welcome to Vulcan Industrial Supply</h1>
                     <hr></hr>
