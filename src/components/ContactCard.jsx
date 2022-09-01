@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ContactCard = ({image, name, email, cell}) => {
+const ContactCard = ({img, name, email, cell}) => {
     return (
-        <div className="card" style={{width: 18 + 'rem'}}>
-            <img className="card-img-top" src={image} alt="Card image cap"></img>
+        <div className="card mt-3" style={{width: 18 + 'rem'}}>
+            <img className="card-img-top" src={img} alt="Card image cap"></img>
             <div className="card-body">
                 <h5 className="card-title center">{name}</h5>                
             </div>
